@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar';
@@ -12,7 +13,6 @@ function App() {
   return (
     <>
       <h1>Hi from Weather app</h1>
-
       <SearchBar onSearch={hadleSearch} />
     </>
   );

@@ -67,3 +67,13 @@ export default tseslint.config([
   },
 ])
 ```
+
+## Environment Variables
+
+Create a `.env` file in the project root to store sensitive values such as API keys. Start by copying `.env.example`:
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` and provide the required values. Vite exposes variables that start with `VITE_` via `import.meta.env`.
