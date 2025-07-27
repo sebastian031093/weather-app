@@ -1,10 +1,12 @@
 import { useState } from 'react'
+import { WEATHER_API_KEY } from './config'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const apiKey = WEATHER_API_KEY
 
   return (
     <>
@@ -17,6 +19,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <p>API key: {apiKey}</p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
