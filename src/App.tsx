@@ -9,8 +9,17 @@ function App() {
   const [weather, setWeather] = useState<any>(null);
   const [error, setError] = useState('');
 
-  function handleSearch(params: string) {
-    console.log('aqui van lo que buscas', params);
+  async function handleSearch(city: string) {
+    console.log('aqui van lo que buscas', city);
+
+    try {
+      const data = fetchWeather(city);
+      setWeather(data);
+      setError('');
+    } catch (err) {
+      setError('City not found');
+      setWeather(null);
+    }
   }
 
   return (
