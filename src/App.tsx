@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import { Container, Typography } from '@mui/material';
