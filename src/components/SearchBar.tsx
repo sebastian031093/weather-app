@@ -9,8 +9,6 @@ function SearchBar({ onSearch }: Props) {
   const [city, setCity] = useState('');
 
   function handleSubmit() {
-    console.log('Hi from handle city');
-
     if (city.trim()) onSearch(city);
   }
 

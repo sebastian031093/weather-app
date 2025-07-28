@@ -13,6 +13,8 @@ interface WeatherData {
 }
 
 function WeatherCard({ data }: { data: WeatherData }) {
+  console.log('data', data);
+
   return (
     <Card sx={{ maxWidth: 400, marginTop: 4 }}>
       <CardContent>

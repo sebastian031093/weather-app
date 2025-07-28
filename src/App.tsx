@@ -13,7 +13,7 @@ function App() {
     console.log('aqui van lo que buscas', city);
 
     try {
-      const data = fetchWeather(city);
+      const data = await fetchWeather(city);
       setWeather(data);
       setError('');
     } catch (err) {
